@@ -6,9 +6,6 @@ class App extends Component {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
 	<LoginForm />
       </header>
     </div>
@@ -67,7 +64,7 @@ function getData(name, boss) {
        boss.setState({userData: "is alive"})
      return
   })
-  xhr.open('GET', 'http://secure.runescape.com/m=hiscore_hardcore_ironman/ranking?table=0&category_type=0&time_filter=0&date=1610390322195&user='+name, true)
+  xhr.open('GET', 'https://secure.runescape.com/m=hiscore_hardcore_ironman/ranking?table=0&category_type=0&time_filter=0&date=1610390322195&user='+name, true)
   xhr.send()
 }
 export default App;
